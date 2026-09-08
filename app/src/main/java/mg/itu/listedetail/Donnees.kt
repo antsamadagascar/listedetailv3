@@ -71,8 +71,8 @@ interface ProduitDao {
     // Attention : les produits sans prix (NULL) doivent apparaître EN DERNIER.
     // Indice SQL : ORDER BY prixKg IS NULL, prixKg DESC
     // Signature à écrire :
-         @Query("SELECT * FROM produits ORDER BY prixKg IS NULL, prixKg DESC")
-         fun parPrixDecroissant(): Flow<List<Produit>>
+    @Query("SELECT * FROM produits ORDER BY prixKg IS NULL, prixKg DESC")
+    fun parPrixDecroissant(): Flow<List<Produit>>
     // -----------------------------------------------------------------------
 
     // -----------------------------------------------------------------------
