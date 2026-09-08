@@ -1,5 +1,6 @@
 package mg.itu.listedetail
 
+
 import android.content.Context
 import androidx.room.Dao
 import androidx.room.Database
@@ -10,16 +11,7 @@ import androidx.room.Query
 import androidx.room.Room
 import androidx.room.RoomDatabase
 import kotlinx.coroutines.flow.Flow
-import android.content.Context
-import androidx.room.Dao
-import androidx.room.Database
-import androidx.room.Entity
-import androidx.room.Insert
-import androidx.room.PrimaryKey
-import androidx.room.Query
-import androidx.room.Room
-import androidx.room.RoomDatabase
-import kotlinx.coroutines.flow.Flow
+
 
 /**
  * Mini-TP 7 — « Trois requêtes »
