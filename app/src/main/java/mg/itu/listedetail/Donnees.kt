@@ -79,8 +79,8 @@ interface ProduitDao {
     // TODO 2 — FILTRE : les produits dont le stock dépasse un seuil donné,
     // le seuil étant un paramètre de la fonction (syntaxe :nomDuParametre).
     // Signature à écrire :
-    //     @Query("...")
-    //     fun stockSuperieurA(seuilKg: Double): Flow<List<Produit>>
+         @Query("SELECT * FROM produits WHERE stockKg > :seuilKg")
+         fun stockSuperieurA(seuilKg: Double): Flow<List<Produit>>
     // -----------------------------------------------------------------------
 
     // -----------------------------------------------------------------------
