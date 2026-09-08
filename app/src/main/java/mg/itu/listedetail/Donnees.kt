@@ -87,8 +87,8 @@ interface ProduitDao {
     // TODO 3 — AGRÉGAT : le stock TOTAL de tous les produits, en une valeur.
     // Indice SQL : SELECT SUM(stockKg) FROM produits
     // Signature à écrire (le résultat peut être null si la table est vide) :
-    //     @Query("...")
-    //     fun stockTotal(): Flow<Double?>
+    @Query("SELECT SUM(stockKg) FROM produits")
+    fun stockTotal(): Flow<Double?>
     // -----------------------------------------------------------------------
 }
 
